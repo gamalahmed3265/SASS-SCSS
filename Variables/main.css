@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  padding: 20px;
+}
+
+header {
+  color: green;
+}
+
+footer {
+  color: green;
+}
+
+.copyright {
+  background-color: green;
+}
+
+@media (max-width: 575) {
+  .slidbar {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

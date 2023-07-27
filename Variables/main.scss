@@ -1,0 +1,25 @@
+@use "./layout//global-rules";
+
+@use "./pages/contact.scss";
+@use "./variables/color" as *;
+
+$alt_color: green;
+
+header{
+    color: $alt_color;
+}
+footer{
+    $alt_color: green !global;
+    color: $alt_color;
+}
+.copyright{
+    background-color: $alt_color;
+}
+
+$max_mobile: "max-width: 575";
+
+@media ($max_mobile) {
+    .slidbar{
+        padding: 20px;
+    }
+}
