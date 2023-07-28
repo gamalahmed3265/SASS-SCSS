@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  padding: 20px;
+}
+
+header {
+  color: green;
+}
+
+footer {
+  color: green;
+}
+
+.copyright {
+  background-color: green;
+}
+
+@media (max-width: 575) {
+  .slidbar {
+    padding: 20px;
+  }
+}
+.parent {
+  padding: 20px;
+}
+.parent .child {
+  font-size: 20px;
+}
+.parent .child .grand-child {
+  margin: 10px;
+}
+
+.parent-one,
+.parent-two {
+  margin: 10px;
+}
+.parent-one .child,
+.parent-two .child {
+  font-style: italic;
+}
+
+.parent-three > .childs {
+  font-size: 30px;
+}
+.parent-three > .test {
+  font-weight: bold;
+}
+
+.parent-four > .childs {
+  font-size: 30px;
+}
+.parent-four .test {
+  font-weight: bold;
+}
+.parent-four + p {
+  font-style: italic;
+}
+
+.parent-five > .childs {
+  font-size: 30px;
+}
+.parent-five > .test {
+  font-weight: bold;
+}
+.parent-five p {
+  font-style: italic;
+}
+
+.box .title {
+  font-style: italic;
+}
+.box.red {
+  bottom: 9;
+}
+.box:hover {
+  color: aqua;
+}
+[dir=rtl] .box {
+  direction: rtl;
+}
+
+.box1 {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-box, .article, .ads {
+  background-color: azure;
+  color: black;
+  border: 1px solid green;
+}
+
+.ads {
+  font-size: 10px;
+}
+
+.article {
+  font-size: 20px;
+}
+
+.arrow-div, .box3, .article2, .ads2 {
+  background-color: azure;
+  color: black;
+  border: 1px solid green;
+}
+
+.ads2 {
+  font-size: 10px;
+}
+
+.article2 {
+  font-size: 20px;
+}
+
+.page2 {
+  background-color: white;
+  color: black;
+}
+
+.arrow-div {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+}
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 50%;
+  top: -40px;
+  transform: translateX(-50%);
+  border-bottom-color: green;
+}
+
+.ad-elzero-ujakv8m {
+  font-size: 20px;
+  background-image: url("iamges/elzero.png");
+}
+
+/*
+    this commant show in css but not show in comparsse mode
+*/
+/*!
+    this commant show in css and show in comparsse mode
+*/
+ul.link {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.circle-100 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.class-1 {
+  font-size: 11px;
+}
+
+.class-2 {
+  font-size: 12px;
+}
+
+.class-3 {
+  font-size: 13px;
+}
+
+.class-4 {
+  font-size: 14px;
+}
+
+.class-5 {
+  font-size: 15px;
+}
+
+.class-6 {
+  font-size: 16px;
+}
+
+.class-7 {
+  font-size: 17px;
+}
+
+.class-8 {
+  font-size: 18px;
+}
+
+.class-9 {
+  font-size: 19px;
+}
+
+.cicle-100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.cicle-200 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.cicle-300 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.cicle-400 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.cicle-500 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.cicle-600 {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+.cicle-700 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+}
+
+.cicle-800 {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+}
+
+.cicle-900 {
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+}
+
+.cicle-1000 {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
