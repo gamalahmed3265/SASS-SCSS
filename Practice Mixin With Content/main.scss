@@ -1,0 +1,29 @@
+
+@use "./helpers/function" as *;
+@use "./helpers/mixin" as *;
+
+$width:200px;
+
+
+.box{
+    width: $width;
+    height: half($width);
+}
+.top{
+    top: calculate(100px,200px,300px);
+}
+
+
+
+.black-overlay{
+    @include overlay(black,0.5);
+}
+
+@include keyF(fade-in){
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
