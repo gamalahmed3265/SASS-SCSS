@@ -1,0 +1,45 @@
+
+@use "./helpers/function" as *;
+@use "./helpers/mixin" as *;
+
+$width:200px;
+
+
+.box{
+    width: $width;
+    height: half($width);
+}
+.top{
+    top: calculate(100px,200px,300px);
+}
+
+
+
+.black-overlay{
+    @include overlay(black,0.5);
+}
+
+@include keyF(fade-in){
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.media{
+    @include breakpoints(mobile){
+        font-size: 15px;
+    }
+    @include breakpoints("small"){
+        font-size: 20px;
+    }
+    @include breakpoints("medium"){
+        font-size: 25px;
+    }
+    @include breakpoints("large"){
+        font-size: 30px;
+    }
+}
