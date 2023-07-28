@@ -1,0 +1,223 @@
+@use "./layout//global-rules";
+
+@use "./pages/contact.scss";
+@use "./variables/color" as *;
+
+$alt_color: green;
+
+header{
+    color: $alt_color;
+}
+footer{
+    $alt_color: green !global;
+    color: $alt_color;
+}
+.copyright{
+    background-color: $alt_color;
+}
+
+$max_mobile: "max-width: 575";
+
+@media ($max_mobile) {
+    .slidbar{
+        padding: 20px;
+    }
+}
+
+
+.parent{
+    padding: 20px;
+    .child{
+        font-size: 20px;
+        .grand-child{
+            margin: 10px;
+        }
+    }
+}
+.parent-one,
+.parent-two{
+    margin: 10px;
+    .child{
+        font-style: italic;
+    }
+}
+.parent-three > {
+    .childs{
+        font-size: 30px;
+    }
+    .test{
+        font-weight: bold;
+    }
+}
+
+.parent-four {
+    > .childs{
+        font-size: 30px;
+    }
+    .test{
+        font-weight: bold;
+    }+p{
+        font-style: italic;
+    }
+}
+.parent-five {
+    > {.childs{
+        font-size: 30px;
+    }
+    .test{
+        font-weight: bold;
+    }}
+    p{
+        font-style: italic;
+    }
+}
+
+.box{
+    .title{
+        font-style: italic;
+    }
+    &.red{
+        bottom: 9;
+    }
+    &:hover{
+        color: aqua;
+    }
+    [dir="rtl"] &{
+        direction: rtl;
+    }
+}
+
+.box1{
+    font: {
+        size: 15px;
+        weight:bold;
+    }
+    padding: 10px;
+    margin: auto{
+        top: 10px;
+        bottom: 10px;
+    };
+}
+
+.main-box{
+    background-color: azure;
+    color: black;
+    border: 1px solid green;
+}
+.ads{
+    @extend .main-box;
+    font-size: 10px;
+}
+.article{
+    @extend .main-box;
+    font-size: 20px;
+}
+
+%main-box2{
+    background-color: azure;
+    color: black;
+    border: 1px solid green;
+}
+.ads2{
+    @extend %main-box2;
+    font-size: 10px;
+}
+.article2{
+    @extend %main-box2;
+    font-size: 20px;
+}
+
+$theme: 'lightu';
+
+.page2{
+    @if $theme=='light'{
+        background-color: white;
+        color: black;
+    }
+    @else{
+        background-color: white;
+        color: black;
+    }
+}
+$round:false;
+.box3{
+    @extend %main-box2;
+    border-radius: if($round,6px,null);
+}
+
+// %main-before{
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     border: 20px solid transparent;
+//     border-bottom-color: green;
+// }
+
+$dirdiction: "top";
+.arrow-div{
+    @extend %main-box2;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    &::before{
+        content: "";
+        position: absolute;
+        border: 20px solid transparent;
+        @if $dirdiction =="top"{
+            left: 50%;
+            top: -40px;
+            transform: translateX(-50%);
+            border-bottom-color: green;
+            
+        }
+        @else if $dirdiction =="right"{
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left-color: green;
+            
+        }
+        @else if $dirdiction =="bottom"{
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top-color: green;
+            
+        }
+        @else if $dirdiction =="left"{
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-right-color: green;
+        }
+        @else{
+            @error "This Dirction Not Valid";
+        }
+    }
+}
+
+
+$company:"elzero";
+
+.ad-#{$company}-#{unique-id()}{
+    font-size: 20px;
+    background-image: url("iamges/#{$company}.png");
+}
+
+/////// this commant not show in css
+
+
+/*
+    this commant show in css but not show in comparsse mode
+*/          
+
+
+/*!
+    this commant show in css and show in comparsse mode
+*/          
+
