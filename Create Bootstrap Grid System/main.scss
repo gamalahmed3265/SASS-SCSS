@@ -1,0 +1,6 @@
+$grid-colm:12;
+@for $i from 1 through $grid-colm{
+    .col-#{i}{
+        width: percentage($i: $grid-colm);
+    }
+}
