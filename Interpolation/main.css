@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  padding: 20px;
+}
+
+header {
+  color: green;
+}
+
+footer {
+  color: green;
+}
+
+.copyright {
+  background-color: green;
+}
+
+@media (max-width: 575) {
+  .slidbar {
+    padding: 20px;
+  }
+}
+.parent {
+  padding: 20px;
+}
+.parent .child {
+  font-size: 20px;
+}
+.parent .child .grand-child {
+  margin: 10px;
+}
+
+.parent-one,
+.parent-two {
+  margin: 10px;
+}
+.parent-one .child,
+.parent-two .child {
+  font-style: italic;
+}
+
+.parent-three > .childs {
+  font-size: 30px;
+}
+.parent-three > .test {
+  font-weight: bold;
+}
+
+.parent-four > .childs {
+  font-size: 30px;
+}
+.parent-four .test {
+  font-weight: bold;
+}
+.parent-four + p {
+  font-style: italic;
+}
+
+.parent-five > .childs {
+  font-size: 30px;
+}
+.parent-five > .test {
+  font-weight: bold;
+}
+.parent-five p {
+  font-style: italic;
+}
+
+.box .title {
+  font-style: italic;
+}
+.box.red {
+  bottom: 9;
+}
+.box:hover {
+  color: aqua;
+}
+[dir=rtl] .box {
+  direction: rtl;
+}
+
+.box1 {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-box, .article, .ads {
+  background-color: azure;
+  color: black;
+  border: 1px solid green;
+}
+
+.ads {
+  font-size: 10px;
+}
+
+.article {
+  font-size: 20px;
+}
+
+.arrow-div, .box3, .article2, .ads2 {
+  background-color: azure;
+  color: black;
+  border: 1px solid green;
+}
+
+.ads2 {
+  font-size: 10px;
+}
+
+.article2 {
+  font-size: 20px;
+}
+
+.page2 {
+  background-color: white;
+  color: black;
+}
+
+.arrow-div {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+}
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 50%;
+  top: -40px;
+  transform: translateX(-50%);
+  border-bottom-color: green;
+}
+
+.ad-elzero-uu8lj4l {
+  font-size: 20px;
+  background-image: url("iamges/elzero.png");
+}/*# sourceMappingURL=main.css.map */
