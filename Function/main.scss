@@ -1,0 +1,13 @@
+
+@use "./helpers/function" as *;
+
+$width:200px;
+
+
+.box{
+    width: $width;
+    height: half($width);
+}
+.top{
+    top: calculate(100px,200px,300px);
+}

@@ -1,0 +1,13 @@
+@function half($size){
+    @return $size/2;
+}
+
+@function calculate($sizes...){
+    $title:0;
+
+    @each $size in $sizes{
+        $title: $title+ $size;
+    }
+
+    @return $title;
+}
